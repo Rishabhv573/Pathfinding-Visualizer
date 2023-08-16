@@ -1,5 +1,5 @@
 ## It's a Pathfinding visualizer
-# It uses A* Pathfinding algorithm and Dijkstra's algorithm as it's base to find the shortest path from begining to end
+It uses A* Pathfinding algorithm and Dijkstra's algorithm as it's base to find the shortest path from begining to end
 It uses python pygame to implement this algorithm
 
 ## A* 
