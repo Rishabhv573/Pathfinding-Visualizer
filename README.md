@@ -1,12 +1,65 @@
-## It's a Pathfinding visualizer
-- It uses A* Pathfinding algorithm and Dijkstra's algorithm as it's base to find the shortest path from begining to end
-- It uses python pygame to implement this algorithm
+#Pathfinding visualizer
 
-## A* 
-It is a variant of Dijkstra's algorithm commonly used in games. A* assigns a weight to each open node equal to the weight of the edge to that node plus the approximate distance between that node and the finish. This approximate distance is found by the heuristic, and represents a minimum possible distance between that node and the end. This allows it to eliminate longer paths once an initial path is found. 
+![image](https://github.com/Rishabhv573/Pathfinding-Visualizer/assets/75075641/beaa2c20-208b-40f2-b0b4-416b6e68d6f1)
 
-## Heuristics
-A* uses this heuristic to improve on the behavior relative to Dijkstra's algorithm. When the heuristic evaluates to zero, A* is equivalent to Dijkstra's algorithm. As the heuristic estimate increases and gets closer to the true distance, A* continues to find optimal paths, but runs faster. When the value of the heuristic is exactly the true distance, A* examines the fewest nodes.
+![image](https://github.com/Rishabhv573/Pathfinding-Visualizer/assets/75075641/bb08ceec-2948-4dbf-9932-53d824f0f0a6)
 
-## Dijkstra's
-Dijkstra's algorithm is used to find the shortest path from a given source node to all other nodes in a weighted graph. The algorithm works for graphs with non-negative edge weights. Here though we have considered equal weights for each edge. 
+
+This Python program demonstrates pathfinding visualization using Pygame. The application allows users to create obstacles, set a starting point, and a target point. Two popular pathfinding algorithms, Dijkstra's Algorithm and A* Algorithm, can be chosen to find the shortest path between the start and target points.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Algorithms](#algorithms)
+- [Controls](#controls)
+- [Dependencies](#dependencies)
+
+## Overview
+
+The program creates a grid where users can interactively set barriers, a start node, and a target node. Users can choose between Dijkstra's Algorithm and A* Algorithm to find the shortest path from the start to the target.
+
+## Features
+
+- Interactive grid for creating obstacles and setting start/target nodes.
+- Visualization of Dijkstra's Algorithm and A* Algorithm pathfinding.
+- Clear the grid and start over with a single key press.
+- Return to the main menu for algorithm selection.
+
+## Getting Started
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/pathfinding-visualization.git
+   cd pathfinding-visualization
+
+## Uasge
+
+- Click on the grid to create barriers, set the start node, and set the target node.
+- Press the space bar to start the chosen algorithm for pathfinding.
+- Press 'c' to clear the grid and start over.
+- Press the backspace key to return to the main menu.
+
+## Algorithms
+
+The program supports two pathfinding algorithms:
+
+1 Dijkstra's Algorithm:
+- Guarantees the shortest path but may take longer to compute.
+2 A Algorithm:*
+- Uses heuristics to find the shortest path more efficiently than Dijkstra's Algorithm.
+
+## Controls
+- Left Mouse Click: Set barriers, start node, and target node.
+- Right Mouse Click: Reset a node to its default state.
+- Space Bar: Start the chosen pathfinding algorithm.
+- 'c': Clear the grid and start over.
+- Backspace Key: Return to the main menu.
+
+## Dependencies
+- Pygame
+- queue
+- heapq
