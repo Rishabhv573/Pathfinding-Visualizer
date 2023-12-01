@@ -49,6 +49,7 @@ The program supports two pathfinding algorithms:
 
 1 Dijkstra's Algorithm:
 - Guarantees the shortest path but may take longer to compute.
+
 2 A Algorithm:*
 - Uses heuristics to find the shortest path more efficiently than Dijkstra's Algorithm.
 
